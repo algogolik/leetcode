@@ -1,7 +1,7 @@
 using NUnit.Framework;
-using LeetCode;
+using LeetCode.Problems;
 
-namespace LeetCode.Test
+namespace LeetCode.Test.ProblemsTest
 {
     public class RunningSumof1dArrayTest
     {
