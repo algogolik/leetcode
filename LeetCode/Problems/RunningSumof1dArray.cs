@@ -14,17 +14,16 @@
             /*
              1 <= nums.length <= 1000
              */
-            var sum = 0;
-            var result = new Queue<int>();
-            for (var i = 0; i < nums.Length; i++)
+            var result = new int[nums.Length];
+            result[0] = nums[0];
+            for (var i = 1; i < nums.Length; i++)
             {
                 // Constraints:
                 // -10^6 <= nums[i] <= 10^6
-                sum += nums[i];
-                result.Enqueue(sum);
+                result[i] = result[i - 1] + nums[i];
             }
 
-            return result.ToArray();
+            return result;
         }
     }
 }
