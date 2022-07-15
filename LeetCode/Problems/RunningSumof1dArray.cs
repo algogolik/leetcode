@@ -4,9 +4,11 @@
     {
         /// <summary>
         /// Given an array <c>nums</c>. We define a running sum of an array as <c>runningSum[i] = sum(nums[0]…nums[i])</c>.
+        /// Time complexity = O(n)
+        /// Space complexity = O(1)
         /// </summary>
-        /// <param name="nums"> Return the running sum of <c>nums</c>.</param>
-        /// <returns></returns>
+        /// <param name="nums"></param>
+        /// <returns>Return the running sum of <c>nums</c>.</returns>
         public static int[] RunningSum(int[] nums)
         {
             if (nums.Length < 1 || nums.Length > 1000)
